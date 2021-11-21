@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -ex
+
+osmium getid -r -t ~/Downloads/australia-latest.osm.pbf r2316741 -o data/victoria-boundary.osm --overwrite
+osmium tags-filter ~/Downloads/australia-latest.osm.pbf n/natural=peak -o data/australia-peaks.osm.pbf --overwrite
+osmium tags-filter data/australia-peaks.osm.pbf n/ele -o data/australia-peaks-with-ele.osm.pbf --overwrite
+osmium extract -p data/victoria-boundary.osm data/australia-peaks-with-ele.osm.pbf -o data/vic-peaks.osm --overwrite

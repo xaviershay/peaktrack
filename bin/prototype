@@ -1,0 +1,64 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+require 'strava-ruby-client'
+require 'pry'
+require 'polylines'
+require 'nokogiri'
+require 'dotenv/load'
+
+def cache(name, &block)
+  filename = File.join("tmp/cache", name)
+  begin
+    File.read(filename)
+  rescue
+    data = block.call
+    File.write(filename, data)
+    data
+  end
+end
+
+client = Strava::Api::Client.new(
+  access_token: ENV['STRAVA_ACCESS_TOKEN'],
+  # logger: Logger.new(STDOUT)
+)
+#activity_id = 6285431089
+#activity_id = 6190012229
+activity_id = 6185475022
+polyline = cache("strava-map-test-#{activity_id}") { client.activity(activity_id).map.polyline }
+
+route = Polylines::Decoder.decode_polyline(polyline)
+
+def distance(loc1, loc2)
+  rad_per_deg = Math::PI/180  # PI / 180
+  rkm = 6371                  # Earth radius in kilometers
+  rm = rkm * 1000             # Radius in meters
+
+  dlat_rad = (loc2[0]-loc1[0]) * rad_per_deg  # Delta, converted to rad
+  dlon_rad = (loc2[1]-loc1[1]) * rad_per_deg
+
+  lat1_rad, lon1_rad = loc1.map {|i| i * rad_per_deg }
+  lat2_rad, lon2_rad = loc2.map {|i| i * rad_per_deg }
+
+  a = Math.sin(dlat_rad/2)**2 + Math.cos(lat1_rad) * Math.cos(lat2_rad) * Math.sin(dlon_rad/2)**2
+  c = 2 * Math::atan2(Math::sqrt(a), Math::sqrt(1-a))
+
+  rm * c # Delta in meters
+end
+
+doc = Nokogiri.parse(File.read('data/vic-peaks.osm'))
+doc.xpath('//node').each do |node|
+  loc1 = [
+    node.attribute('lat').value.to_f,
+    node.attribute('lon').value.to_f
+  ]
+  min_dist = 99999999999
+  route.each do |loc2|
+    d = distance(loc1, loc2)
+    min_dist = d if d < min_dist
+  end
+  if min_dist < 1000
+    puts min_dist
+    puts node.xpath('tag[@k = "name"]').first.attribute("v").value
+  end
+end

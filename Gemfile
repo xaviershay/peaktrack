@@ -40,5 +40,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
+gem 'dotenv'
 gem 'strava-ruby-client'
-gem 'pbf_parser'
+gem 'polylines'

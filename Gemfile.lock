@@ -76,6 +76,7 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    dotenv (1.0.2)
     erubi (1.10.0)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
@@ -122,6 +123,7 @@ GEM
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     pg (1.2.3)
+    polylines (0.4.0)
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
@@ -218,8 +220,10 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   capybara (>= 3.26)
+  dotenv
   listen (~> 3.3)
   pg
+  polylines
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)

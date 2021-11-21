@@ -1,24 +1,10 @@
-# README
+# Peak Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Data Sources
 
-* Ruby version
+OSM data, scoped to Australia for now, downloaded from here:
+https://download.geofabrik.de/australia-oceania/australia.html
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    sudo apt-get install osmium-tool
+    bin/extract-vic-peaks

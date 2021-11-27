@@ -1,6 +1,12 @@
 <h1><%= @athlete.name %></h1>
 <img src=<%= @athlete.profile_photo_url %> />
 
+<ul>
+<% @regions.each do |region| %>
+  <li><%= link_to region.name, "/athlete/%i/region/%i" % [@athlete.id, region.id] %></li>
+<% end %>
+</ul>
+
 <table>
   <tr>
     <th>Peak</th>

@@ -27,6 +27,7 @@ client = Strava::Api::Client.new(
 activity_id = 6185475022
 polyline = cache("strava-map-test-#{activity_id}") { client.activity(activity_id).map.polyline }
 
+binding.pry
 route = Polylines::Decoder.decode_polyline(polyline)
 
 def distance(loc1, loc2)

@@ -43,3 +43,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv'
 gem 'strava-ruby-client'
 gem 'polylines'
+gem 'good_job'
+gem 'pry'

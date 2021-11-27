@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+require 'strava-ruby-client'
+require_relative '../config/environment'
+require 'dotenv/load'
+
+client = Strava::Api::Client.new(
+  access_token: ENV.fetch('STRAVA_ACCESS_TOKEN'),
+  # logger: Logger.new(STDOUT)
+)
+a = client.athlete
+
+client = Strava::OAuth::Client.new(
+  client_id: ENV.fetch('STRAVA_CLIENT_ID'),
+  client_secret: ENV.fetch('STRAVA_CLIENT_SECRET')
+)
+
+new_token = AuthToken.new(
+  "TODO",
+  "TODO",
+  0
+)
+
+Athlete.create!(
+  id: a.id,
+  name: "%s %s" % [a.firstname, a.lastname],
+  profile_photo_url: a.profile,
+  oauth_token: new_token,
+  oldest_activity_at: Time.zone.now
+)
+

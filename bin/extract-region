@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -ex
+
+REGION_ID=$1
+NAME=$2
+
+FILENAME="$REGION_ID-$NAME"
+
+osmium getid -r -t ~/Downloads/australia-latest.osm.pbf "r$REGION_ID" -o data/tmp-boundary.osm --overwrite
+osmium extract -p data/tmp-boundary.osm data/australia-peaks-with-ele.osm.pbf \
+  -o data/regions/$FILENAME.osm --overwrite

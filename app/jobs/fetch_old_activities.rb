@@ -33,6 +33,6 @@ class FetchOldActivities < ApplicationJob
     )
 
     # TODO: uncomment and rate limit
-    # FetchOldActivities.perform_later(athlete.id)
+    FetchOldActivities.perform_later(athlete.id)
   end
 end

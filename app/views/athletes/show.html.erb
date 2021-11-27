@@ -1,0 +1,21 @@
+<h1><%= @athlete.name %></h1>
+<img src=<%= @athlete.profile_photo_url %> />
+
+<table>
+  <tr>
+    <th>Peak</th>
+    <th>Elevation</th>
+    <th>Summits</th>
+    <th>Most Recent</th>
+  </tr>
+<% @summary.each do |rp| %>
+  <tr>
+    <td><%= rp.name %></td>
+    <td><%= rp.elevation %></td>
+    <% if rp.activity_id %>
+      <td><%= rp.summit_count %>
+      <td><%= link_to rp.started_at.strftime("%-d %b, %Y"), "https://www.strava.com/activities/%i" % rp.activity_id %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

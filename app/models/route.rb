@@ -10,7 +10,7 @@ class Route
   def inspect
     "<Route bounds=%s (%i)>" % [
       bounds.inspect,
-      points.size
+      (points.size rescue "0")
     ]
   end
 
@@ -48,7 +48,7 @@ class Route
   end
 
   def self.null
-    Route.new(nil, nil)
+    nil
   end
 
   def self.load(string)

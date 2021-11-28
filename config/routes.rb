@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'misc#dashboard'
   get '/auth', to: 'misc#auth'
   get '/help', to: 'misc#help'
+
+  get '/webhook', to: 'misc#webhook_register'
+  post '/webhook', to: 'misc#webhook_receive'
+
   post '/logout', to: 'misc#logout'
 end

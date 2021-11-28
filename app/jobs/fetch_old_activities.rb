@@ -25,6 +25,7 @@ class FetchOldActivities < ApplicationJob
       next unless a.map && a.map.summary_polyline
 
       begin
+        # TODO: DRY up with webhook_receive
         activity = athlete.activities.create!(
           id: a.id,
           name: a.name,

@@ -7,6 +7,52 @@ class MiscController < ApplicationController
     redirect_to '/'
   end
 
+  def webhook_register
+    challenge = Strava::Webhooks::Models::Challenge.new(params)
+    raise 'Bad Request' unless challenge.verify_token == 'token'
+
+    render json: challenge.response
+  end
+
+  # Must respond in 2s
+  def webhook_receive
+    event = Strava::Webhooks::Models::Event.new(JSON.parse(request.body))
+
+    case [event.object_type, event.aspect_type]
+    when ['activity', 'create']
+      athlete = Athlete.find(event.owner_id)
+      # TODO: Should async this to not risk timing out
+      client = Strava::Api::Client.new(
+        access_token: token.access_token,
+        #logger: Logger.new(STDOUT)
+      )
+      a = client.activity(event.object_id)
+      return unless a.map && a.map.summary_polyline
+      begin
+        # TODO: DRY up with FetchOldActivities. Possible optimization to store
+        # route here also.
+        activity = athlete.activities.create!(
+          id: a.id,
+          name: a.name,
+          started_at: a.start_date,
+          route_summary: Route.from_polyline(a.map.summary_polyline)
+        )
+        IdentifyPeaksInActivity.perform_later(athlete.id, activity.id)
+      rescue ActiveRecord::RecordNotUnique
+      end
+    when ['activity', 'update']
+      begin
+        if title = event.updates['title']
+          activity = Activity.find(event.object_id)
+          activity.update!(title: title)
+        end
+      rescue ActiveRecord::RecordNotUnique
+      end
+    when ['activity', 'delete']
+      Activity.find(event.object_id).destroy
+    end
+  end
+
   def dashboard
     @athlete = Athlete.find(session[:current_athlete_id])
     @regions = Region.all

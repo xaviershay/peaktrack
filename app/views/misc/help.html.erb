@@ -1,0 +1,28 @@
+<div class="px-4 py-5 my-5">
+<h1>Help & About</h1>
+
+<h4>Who made this?</h4>
+<p><a href="https://xaviershay.com">Xavier Shay</a> did. It's <a href="https://github.com/xaviershay/peaktrack">open source</a> though. PRs welcome.</p>
+
+<h4>Is it free?</h4>
+<p>Yep, but this is just a hobby project so please don't expect much.</p>
+<h4>How does it work?</h4>
+<p>
+Peak and region data is extracted from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. To request a new region, <a href='mailto:<%= ENV.fetch('CONTACT_EMAIL') %>'>email me</a> with a link to the relation representing that region which you can find using OpenStreetMap search (for example, <a href='https://www.openstreetmap.org/relation/2316741'>here is the one for Victoria</a>).
+</p>
+<p>
+  When you authorize with your Strava account, Peak Track downloads all of your
+  public activities and subscribes for any new ones. It checks all of the GPS
+  traces for points near to known peaks.
+</p>
+
+<h4>A peak I summited is not being recognized.</h4>
+<p>
+Oh no! <a href="mailto:<%= ENV.fetch("CONTACT_EMAIL") %>">Email me</a> a link to the activity and the peak that is missing.
+</p>
+<h4>Where'd you get that big mountain photo on your home page?</h4>
+
+<p>It's by <a href="https://unsplash.com/@tokeller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tobias Keller</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>, what a legend.
+</p>
+  <%= link_to "Back to home page", '/', class: 'btn btn-success' %>
+</div>

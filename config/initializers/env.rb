@@ -1,0 +1,1 @@
+HOSTNAME = ENV.fetch('HOSTNAME')

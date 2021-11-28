@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   get '/athlete/:athlete_id/region/:region_id', to: 'athletes#show'
 
   get '/debug/activity/:id', to: 'athletes#debug_activity'
+
+  get '/', to: 'misc#home'
+  get '/dashboard', to: 'misc#dashboard'
+  get '/auth', to: 'misc#auth'
+  get '/help', to: 'misc#help'
+  post '/logout', to: 'misc#logout'
 end

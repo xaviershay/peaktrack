@@ -15,7 +15,11 @@
 <table class='table'>
   <tr>
     <th>Activities</th>
-    <td><%= @athlete.activities.size %></td>
+    <td><%= @athlete.activities.size %>
+    <% unless @athlete.sync_completed_at %>
+      <span>(Your activities are still being loaded&hellip;)</span>
+    <% end %>
+    </td>
   </tr>
   <tr>
     <th>Oldest Synced</th>

@@ -16,7 +16,10 @@ class FetchOldActivities < ApplicationJob
       per_page: 200
     )
 
-    return if as.empty?
+    if as.empty?
+      athlete.update!(sync_completed_at: Time.zone.now) unless athlete.sync_completed_at
+      return
+    end
 
     as.each do |a|
       next unless a.map && a.map.summary_polyline

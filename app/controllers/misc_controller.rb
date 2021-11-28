@@ -8,15 +8,18 @@ class MiscController < ApplicationController
   end
 
   def webhook_register
-    challenge = Strava::Webhooks::Models::Challenge.new(params)
-    raise 'Bad Request' unless challenge.verify_token == 'token'
+    challenge = Strava::Webhooks::Models::Challenge.new(params.slice(
+      'hub.verify_token', 'hub.challenge', 'hub.mode'
+    ))
+    raise 'Bad Request' unless challenge.verify_token == ENV.fetch("WEBHOOK_TOKEN")
 
     render json: challenge.response
   end
 
   # Must respond in 2s
+  skip_before_action :verify_authenticity_token, only: :webhook_receive
   def webhook_receive
-    event = Strava::Webhooks::Models::Event.new(JSON.parse(request.body))
+    event = Strava::Webhooks::Models::Event.new(JSON.parse(request.body.read))
 
     case [event.object_type, event.aspect_type]
     when ['activity', 'create']
@@ -44,13 +47,14 @@ class MiscController < ApplicationController
       begin
         if title = event.updates['title']
           activity = Activity.find(event.object_id)
-          activity.update!(title: title)
+          activity.update!(name: title)
         end
-      rescue ActiveRecord::RecordNotUnique
+      rescue ActiveRecord::RecordNotFound
       end
     when ['activity', 'delete']
       Activity.find(event.object_id).destroy
     end
+    render json: {ok: true}
   end
 
   def dashboard

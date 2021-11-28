@@ -1,11 +1,12 @@
-<h1><%= @athlete.name %></h1>
-<img src=<%= @athlete.profile_photo_url %> />
-
-<ul>
-<% @regions.sort_by(&:name).each do |region| %>
-  <li><%= link_to region.name, "/athlete/%i/region/%i" % [@athlete.id, region.id] %></li>
-<% end %>
-</ul>
+<header class="d-flex align-items-center pb-3 mb-5 border-bottom justify-content-between">
+  <div class='d-flex align-items-center'>
+<img src=<%= @athlete.profile_photo_url %> style="border-radius: 50%; object-fit: cover; width: 60px" />
+<h1 style="margin-bottom: 0px; margin-left: 10px"><%= @athlete.name %></h1>
+  </div>
+  <div>
+<h1 style="margin-bottom: 0px;"><%= @region.name %></h1>
+  </div>
+</header>
 
 <div id="map" style="height: 400px"></div>
 
@@ -40,21 +41,41 @@
   <% end %>
 </script>
 
-<table>
+<p  />
+<table class='table table-sm'>
   <tr>
-    <th>Peak</th>
-    <th>Elevation</th>
-    <th>Summits</th>
-    <th>Most Recent</th>
+    <td class='text-center' style='width: 50px'>#</th>
+    <th class='text-center' style='width: 50px'>Elevation</th>
+    <th>Name</th>
+    <th>Most Recent Activity</th>
+    <th class='text-center' style='width: 150px'>Date</th>
+    <th class='text-center' style='width: 50px'>Summits</th>
   </tr>
-<% @summary.each do |rp| %>
+<% @summary.each.with_index do |rp, i| %>
   <tr>
+    <td class='text-center'><%= i + 1 %></td>
+    <td class='text-center'><%= rp.elevation %></td>
     <td><%= rp.name %></td>
-    <td><%= rp.elevation %></td>
     <% if rp.activity_id %>
-      <td><%= rp.summit_count %>
-      <td><%= link_to rp.started_at.strftime("%-d %b, %Y"), "https://www.strava.com/activities/%i" % rp.activity_id %></td>
+      <td><%= link_to rp.activity_name, "https://www.strava.com/activities/%i" % rp.activity_id %></td>
+      <td class='text-center'><%= rp.started_at.strftime("%-d %b, %Y") %></td>
+      <td class='text-center'><%= rp.summit_count %>
+    <% else %>
+      <td></td>
+      <td></td>
+      <td></td>
     <% end %>
   </tr>
 <% end %>
 </table>
+
+<footer class='card'>
+  <div class='card-body'>
+    <div class='card-title'>Other Regions<div>
+    <ul>
+    <% @regions.sort_by(&:name).each do |region| %>
+      <li><%= link_to region.name, "/athlete/%i/region/%i" % [@athlete.id, region.id] %></li>
+    <% end %>
+    </ul>
+  </div>
+</footer>

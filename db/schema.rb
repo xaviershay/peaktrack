@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_27_073332) do
+ActiveRecord::Schema.define(version: 2021_11_28_000022) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_11_27_073332) do
     t.string "route"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name", default: "", null: false
     t.index ["athlete_id"], name: "index_activities_on_athlete_id"
   end
 

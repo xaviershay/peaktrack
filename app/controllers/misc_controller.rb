@@ -24,6 +24,7 @@ class MiscController < ApplicationController
     case [event.object_type, event.aspect_type]
     when ['activity', 'create']
       athlete = Athlete.find(event.owner_id)
+      token = athlete.current_token!
       # TODO: Should async this to not risk timing out
       client = Strava::Api::Client.new(
         access_token: token.access_token,
@@ -48,6 +49,36 @@ class MiscController < ApplicationController
         if title = event.updates['title']
           activity = Activity.find(event.object_id)
           activity.update!(name: title)
+        end
+
+        if event.updates.key?('private')
+          if event.updates['private'] == "false"
+            athlete = Athlete.find(event.owner_id)
+            token = athlete.current_token!
+            client = Strava::Api::Client.new(
+              access_token: token.access_token,
+              #logger: Logger.new(STDOUT)
+            )
+            a = client.activity(event.object_id)
+            return unless a.map && a.map.summary_polyline
+            begin
+              # TODO: DRY up with FetchOldActivities. Possible optimization to store
+              # route here also.
+              activity = athlete.activities.create!(
+                id: a.id,
+                name: a.name,
+                started_at: a.start_date,
+                route_summary: Route.from_polyline(a.map.summary_polyline)
+              )
+              IdentifyPeaksInActivity.perform_later(athlete.id, activity.id)
+            rescue ActiveRecord::RecordNotUnique
+            end
+          else
+            begin
+              Activity.find(event.object_id).destroy
+            rescue ActiveRecord::RecordNotFound
+            end
+          end
         end
       rescue ActiveRecord::RecordNotFound
       end
@@ -90,9 +121,9 @@ class MiscController < ApplicationController
                   Athlete.find(athlete.id).tap {|x| x.update!(oauth_token: new_token) }
                 rescue ActiveRecord::RecordNotFound
                   Athlete.create!(
-                    id: a.id,
-                    name: "%s %s" % [a.firstname, a.lastname],
-                    profile_photo_url: a.profile,
+                    id: athlete.id,
+                    name: "%s %s" % [athlete.firstname, athlete.lastname],
+                    profile_photo_url: athlete.profile,
                     oauth_token: new_token,
                     oldest_activity_at: Time.zone.now
                   ).tap {|x|

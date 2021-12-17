@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.11.1">
+  <node id="711359507" version="3" timestamp="2016-06-15T01:52:03Z" lat="-37.40813" lon="145.75345">
+    <tag k="ele" v="912"/>
+    <tag k="name" v="Sugarloaf Peak"/>
+    <tag k="source" v="gps"/>
+    <tag k="natural" v="peak"/>
+    <tag k="alt_name" v="Mount Sugarloaf"/>
+  </node>
+  <node id="1444231818" version="4" timestamp="2016-11-06T10:18:58Z" lat="-37.3887121" lon="145.7439136">
+    <tag k="ele" v="804"/>
+    <tag k="name" v="South Jawbone Peak"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="1500999942" version="4" timestamp="2016-10-07T04:21:27Z" lat="-37.3666148" lon="145.7339416">
+    <tag k="ele" v="840"/>
+    <tag k="name" v="Cathedral Peak"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="3776393061" version="2" timestamp="2016-11-14T02:47:39Z" lat="-37.3828538" lon="145.7423292">
+    <tag k="ele" v="795"/>
+    <tag k="name" v="North Jawbone Peak"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+</osm>

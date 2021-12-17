@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.11.1">
+  <node id="716723919" version="3" timestamp="2019-04-16T17:49:35Z" lat="-36.776349" lon="146.7674373">
+    <tag k="ele" v="1723"/>
+    <tag k="name" v="The Horn"/>
+    <tag k="source" v="Vicmap Lite (data.vic.gov.au)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+    <tag k="wikidata" v="Q7740287"/>
+    <tag k="source:ele" v="Wikipedia"/>
+  </node>
+  <node id="2963833147" version="3" timestamp="2015-10-11T12:26:50Z" lat="-36.7273747" lon="146.8075707">
+    <tag k="ele" v="1419"/>
+    <tag k="name" v="The Monolith"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2963833175" version="2" timestamp="2015-10-11T12:24:01Z" lat="-36.6956204" lon="146.7898252">
+    <tag k="ele" v="1541"/>
+    <tag k="name" v="Mt McLeod"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2963833230" version="3" timestamp="2017-10-24T10:21:16Z" lat="-36.7582391" lon="146.7881193">
+    <tag k="ele" v="1695"/>
+    <tag k="name" v="The Hump"/>
+    <tag k="place" v="locality"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2963915329" version="2" timestamp="2015-10-11T12:17:52Z" lat="-36.7537522" lon="146.7932206">
+    <tag k="ele" v="1695"/>
+    <tag k="name" v="La Souef"/>
+    <tag k="natural" v="peak"/>
+  </node>
+</osm>

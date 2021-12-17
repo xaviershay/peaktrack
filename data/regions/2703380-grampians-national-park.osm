@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.11.1">
+  <node id="701715606" version="3" timestamp="2019-04-17T18:17:34Z" lat="-37.2927499" lon="142.6011248">
+    <tag k="ele" v="1167"/>
+    <tag k="name" v="Mount William"/>
+    <tag k="source" v="Vicmap Lite (data.vic.gov.au)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q6924602"/>
+  </node>
+  <node id="1490222515" version="1" timestamp="2011-11-03T10:15:35Z" lat="-37.3421302" lon="142.5765165">
+    <tag k="ele" v="1167"/>
+    <tag k="name" v="Durd Durd"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1490228040" version="2" timestamp="2014-08-10T16:13:32Z" lat="-36.8983842" lon="142.3872348">
+    <tag k="ele" v="518"/>
+    <tag k="name" v="Mount Stapylton"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="1730467800" version="4" timestamp="2019-04-17T18:17:40Z" lat="-36.8852933" lon="142.3686876">
+    <tag k="ele" v="394"/>
+    <tag k="name" v="Mount Zero"/>
+    <tag k="source" v="survey"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q21897850"/>
+  </node>
+  <node id="2227822007" version="2" timestamp="2020-10-26T10:15:54Z" lat="-37.1998349" lon="142.4741071">
+    <tag k="ele" v="726"/>
+    <tag k="name" v="Tower Hill"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="bing"/>
+  </node>
+  <node id="2229574074" version="5" timestamp="2021-06-05T03:09:53Z" lat="-37.1969875" lon="142.5065962">
+    <tag k="ele" v="1009"/>
+    <tag k="name" v="Mount Rosea"/>
+    <tag k="natural" v="peak"/>
+    <tag k="source" v="bing"/>
+  </node>
+  <node id="2241434332" version="2" timestamp="2014-08-10T16:13:31Z" lat="-37.0097003" lon="142.4409129">
+    <tag k="ele" v="805.6"/>
+    <tag k="name" v="Mount Difficult"/>
+    <tag k="natural" v="peak"/>
+    <tag k="alt_name" v="Mount Gar"/>
+  </node>
+  <node id="2426423180" version="2" timestamp="2017-08-28T11:30:44Z" lat="-37.2822797" lon="142.5614978">
+    <tag k="ele" v="793"/>
+    <tag k="name" v="Cathedral Rock"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2426423184" version="1" timestamp="2013-08-21T07:34:50Z" lat="-37.3351449" lon="142.6201377">
+    <tag k="ele" v="645"/>
+    <tag k="name" v="Murray Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2755498510" version="3" timestamp="2017-09-10T07:27:10Z" lat="-37.1490412" lon="142.5368625">
+    <tag k="ele" v="560"/>
+    <tag k="name" v="Boronia Peak"/>
+    <tag k="source" v="gps"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902532" version="1" timestamp="2014-08-10T16:12:56Z" lat="-37.59763" lon="142.35333">
+    <tag k="ele" v="825"/>
+    <tag k="name" v="Mount Abrupt"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902657" version="1" timestamp="2014-08-10T16:13:03Z" lat="-37.31948" lon="142.50077">
+    <tag k="ele" v="917"/>
+    <tag k="name" v="Mount Lang"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902849" version="2" timestamp="2017-08-29T01:11:40Z" lat="-37.2932876" lon="142.3310346">
+    <tag k="ele" v="978"/>
+    <tag k="name" v="Mount Thackeray"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902854" version="3" timestamp="2017-09-10T07:27:10Z" lat="-37.14754" lon="142.44907">
+    <tag k="ele" v="711"/>
+    <tag k="name" v="Mount Victory"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903579" version="1" timestamp="2014-08-10T16:13:20Z" lat="-37.18196" lon="142.4777">
+    <tag k="ele" v="641"/>
+    <tag k="name" v="Stony Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903614" version="2" timestamp="2021-06-05T03:10:23Z" lat="-37.3795927" lon="142.2389315">
+    <tag k="ele" v="932"/>
+    <tag k="name" v="The Chimney Pots"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903621" version="2" timestamp="2021-06-05T03:10:23Z" lat="-37.61967" lon="142.33583">
+    <tag k="ele" v="448"/>
+    <tag k="name" v="The Piccaninny"/>
+    <tag k="name:aus" v="Bainggug"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3801716748" version="4" timestamp="2020-08-01T07:48:48Z" lat="-37.1658541" lon="142.5182609">
+    <tag k="ele" v="735"/>
+    <tag k="name" v="Bellfield Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065257239" version="1" timestamp="2017-08-29T01:05:18Z" lat="-37.4129153" lon="142.4668045">
+    <tag k="ele" v="819"/>
+    <tag k="name" v="Mount Marum Marum"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065258980" version="1" timestamp="2017-08-29T01:09:45Z" lat="-37.3429985" lon="142.5629853">
+    <tag k="ele" v="1103"/>
+    <tag k="name" v="Banksia Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065258981" version="1" timestamp="2017-08-29T01:11:40Z" lat="-37.2976211" lon="142.3392174">
+    <tag k="ele" v="985"/>
+    <tag k="name" v="Victoria Range"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065261899" version="1" timestamp="2017-08-29T01:21:10Z" lat="-37.2117635" lon="142.5039583">
+    <tag k="ele" v="1022"/>
+    <tag k="name" v="D&apos;Alton Peaks"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5205507550" version="2" timestamp="2021-01-27T05:04:30Z" lat="-37.3066272" lon="142.2984132">
+    <tag k="description" v="Peak with the exposed West Wall."/>
+    <tag k="ele" v="875"/>
+    <tag k="name" v="The Fortress"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775075982" version="2" timestamp="2020-08-01T10:35:44Z" lat="-37.1439085" lon="142.5279835">
+    <tag k="ele" v="291"/>
+    <tag k="name" v="Mt Ida"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775093197" version="2" timestamp="2020-08-01T10:34:54Z" lat="-37.1463481" lon="142.5359511">
+    <tag k="ele" v="500"/>
+    <tag k="name" v="Peverill Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775100702" version="2" timestamp="2020-08-01T10:36:55Z" lat="-37.1414011" lon="142.5116669">
+    <tag k="ele" v="468"/>
+    <tag k="name" v="Mackays Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775104443" version="2" timestamp="2020-08-01T10:37:42Z" lat="-37.1470333" lon="142.5119416">
+    <tag k="ele" v="567"/>
+    <tag k="name" v="Point Sunshine"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775113852" version="2" timestamp="2020-08-01T10:39:04Z" lat="-37.1570349" lon="142.5150774">
+    <tag k="ele" v="695"/>
+    <tag k="name" v="Relph Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775122099" version="2" timestamp="2020-08-01T10:38:10Z" lat="-37.153391" lon="142.5108567">
+    <tag k="ele" v="626"/>
+    <tag k="name" v="Signal Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7775385486" version="1" timestamp="2020-08-01T11:29:32Z" lat="-37.1845047" lon="142.52373">
+    <tag k="ele" v="820"/>
+    <tag k="name" v="Sundial Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7776530548" version="1" timestamp="2020-08-01T22:45:18Z" lat="-37.1345218" lon="142.5142079">
+    <tag k="ele" v="429"/>
+    <tag k="name" v="Chatauqua Peak"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7777591458" version="1" timestamp="2020-08-02T11:25:42Z" lat="-37.1433778" lon="142.5344839">
+    <tag k="ele" v="455"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="7777631674" version="1" timestamp="2020-08-02T11:24:38Z" lat="-37.135495" lon="142.5293216">
+    <tag k="ele" v="405"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="8046909285" version="3" timestamp="2020-10-26T20:13:41Z" lat="-37.1916586" lon="142.5038826">
+    <tag k="ele" v="825"/>
+    <tag k="name" v="Gate of the East Wind"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="8049322610" version="3" timestamp="2020-11-02T06:29:23Z" lat="-37.189342" lon="142.4762659">
+    <tag k="ele" v="768"/>
+    <tag k="name" v="The Bundaleers"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="8366154350" version="1" timestamp="2021-01-27T05:04:30Z" lat="-37.3082739" lon="142.3030222">
+    <tag k="description" v="Highest peak according to the Grampians NP map."/>
+    <tag k="ele" v="893"/>
+    <tag k="name" v="The Fortress (main peak)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+</osm>

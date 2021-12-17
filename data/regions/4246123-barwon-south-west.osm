@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.11.1">
+  <node id="174820087" version="5" timestamp="2019-01-05T21:55:03Z" lat="-37.9509878" lon="144.4246977">
+    <tag k="ele" v="350"/>
+    <tag k="name" v="Flinders Peak"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="322763977" version="4" timestamp="2014-08-10T16:13:33Z" lat="-38.3212941" lon="142.3597139">
+    <tag k="ele" v="103"/>
+    <tag k="name" v="Tower Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="512059837" version="4" timestamp="2015-05-23T08:42:05Z" lat="-37.8826053" lon="142.3007643">
+    <tag k="ele" v="367"/>
+    <tag k="name" v="Mount Rouse"/>
+    <tag k="natural" v="peak"/>
+    <tag k="tourism" v="viewpoint"/>
+  </node>
+  <node id="702323922" version="3" timestamp="2019-03-30T21:50:03Z" lat="-37.8938254" lon="142.0588584">
+    <tag k="ele" v="440"/>
+    <tag k="name" v="Mount Napier"/>
+    <tag k="source" v="Vicmap Lite (data.vic.gov.au)"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q1345263"/>
+    <tag k="wikipedia" v="en:Mount Napier"/>
+    <tag k="source:ele" v="Wikipedia"/>
+  </node>
+  <node id="1569159947" version="2" timestamp="2014-08-10T16:13:32Z" lat="-38.0558886" lon="142.8117995">
+    <tag k="ele" v="292"/>
+    <tag k="name" v="Mount Shadwell"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="2069739900" version="5" timestamp="2017-09-10T04:58:53Z" lat="-38.2443861" lon="143.1576092">
+    <tag k="ele" v="313"/>
+    <tag k="name" v="Mount Leura"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q1950566"/>
+    <tag k="wikipedia" v="en:Mount Leura"/>
+  </node>
+  <node id="3008339111" version="2" timestamp="2020-06-27T21:18:49Z" lat="-37.88545" lon="144.26814">
+    <tag k="ele" v="398"/>
+    <tag k="name" v="Mount Anakie"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q21938585"/>
+  </node>
+  <node id="3008339537" version="1" timestamp="2014-08-10T09:19:56Z" lat="-38.19827" lon="144.16603">
+    <tag k="ele" v="251"/>
+    <tag k="name" v="Mount Moriac"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008339554" version="1" timestamp="2014-08-10T09:19:57Z" lat="-38.16537" lon="144.07314">
+    <tag k="ele" v="185"/>
+    <tag k="name" v="Mount Pollock"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008901758" version="1" timestamp="2014-08-10T16:12:36Z" lat="-38.08155" lon="143.4087">
+    <tag k="ele" v="146"/>
+    <tag k="name" v="Bald Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008901759" version="1" timestamp="2014-08-10T16:12:36Z" lat="-38.38533" lon="141.60569">
+    <tag k="ele" v="68"/>
+    <tag k="name" v="Bald Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008901799" version="1" timestamp="2014-08-10T16:12:38Z" lat="-38.1785" lon="143.69893">
+    <tag k="ele" v="131"/>
+    <tag k="name" v="Black Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902106" version="1" timestamp="2014-08-10T16:12:44Z" lat="-38.45645" lon="143.92417">
+    <tag k="ele" v="395"/>
+    <tag k="name" v="Diamond Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902116" version="1" timestamp="2014-08-10T16:12:44Z" lat="-38.47269" lon="143.08523">
+    <tag k="ele" v="121"/>
+    <tag k="name" v="Dykes Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902117" version="1" timestamp="2014-08-10T16:12:44Z" lat="-38.82581" lon="143.50257">
+    <tag k="ele" v="157"/>
+    <tag k="name" v="E S Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902132" version="1" timestamp="2014-08-10T16:12:45Z" lat="-38.26597" lon="143.02039">
+    <tag k="ele" v="271"/>
+    <tag k="name" v="Ewen Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902235" version="1" timestamp="2014-08-10T16:12:45Z" lat="-38.61068" lon="143.18206">
+    <tag k="ele" v="217"/>
+    <tag k="name" v="Fergusons Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902241" version="1" timestamp="2014-08-10T16:12:46Z" lat="-38.54034" lon="142.74901">
+    <tag k="ele" v="76"/>
+    <tag k="name" v="Flaxmans Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902254" version="1" timestamp="2014-08-10T16:12:46Z" lat="-38.71111" lon="143.71522">
+    <tag k="ele" v="236"/>
+    <tag k="name" v="Gentle Annie Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902273" version="1" timestamp="2014-08-10T16:12:47Z" lat="-38.33042" lon="141.47653">
+    <tag k="ele" v="91"/>
+    <tag k="name" v="Grasstree Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902279" version="1" timestamp="2014-08-10T16:12:48Z" lat="-38.63095" lon="143.66585">
+    <tag k="ele" v="556"/>
+    <tag k="name" v="Groves Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902285" version="1" timestamp="2014-08-10T16:12:48Z" lat="-38.65074" lon="143.62724">
+    <tag k="ele" v="580"/>
+    <tag k="name" v="Hallett Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902435" version="1" timestamp="2014-08-10T16:12:51Z" lat="-38.04105" lon="141.28666">
+    <tag k="ele" v="124"/>
+    <tag k="name" v="Jones Ridge"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902471" version="1" timestamp="2014-08-10T16:12:53Z" lat="-38.83942" lon="143.51364">
+    <tag k="ele" v="154"/>
+    <tag k="name" v="Lawrys Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902489" version="1" timestamp="2014-08-10T16:12:54Z" lat="-38.66775" lon="143.61015">
+    <tag k="ele" v="517"/>
+    <tag k="name" v="Madden Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902532" version="1" timestamp="2014-08-10T16:12:56Z" lat="-37.59763" lon="142.35333">
+    <tag k="ele" v="825"/>
+    <tag k="name" v="Mount Abrupt"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902569" version="1" timestamp="2014-08-10T16:12:59Z" lat="-38.66238" lon="143.45164">
+    <tag k="ele" v="548"/>
+    <tag k="name" v="Mount Chapple"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902572" version="1" timestamp="2014-08-10T16:12:59Z" lat="-38.38494" lon="141.52707">
+    <tag k="ele" v="122"/>
+    <tag k="name" v="Mount Chaucer"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902573" version="1" timestamp="2014-08-10T16:12:59Z" lat="-38.21603" lon="141.70339">
+    <tag k="ele" v="186"/>
+    <tag k="name" v="Mount Clay"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902581" version="1" timestamp="2014-08-10T16:12:59Z" lat="-38.54824" lon="143.85982">
+    <tag k="ele" v="689"/>
+    <tag k="name" v="Mount Cowley"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902585" version="1" timestamp="2014-08-10T16:12:59Z" lat="-38.08831" lon="141.44324">
+    <tag k="ele" v="152"/>
+    <tag k="name" v="Mount Deception"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902594" version="1" timestamp="2014-08-10T16:13:00Z" lat="-37.45893" lon="141.91569">
+    <tag k="ele" v="466"/>
+    <tag k="name" v="Mount Dundas"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902611" version="1" timestamp="2014-08-10T16:13:01Z" lat="-37.86247" lon="142.97722">
+    <tag k="ele" v="275"/>
+    <tag k="name" v="Mount Fyans"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902618" version="1" timestamp="2014-08-10T16:13:01Z" lat="-38.23347" lon="143.79238">
+    <tag k="ele" v="261"/>
+    <tag k="name" v="Mount Gellibrand"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902630" version="1" timestamp="2014-08-10T16:13:02Z" lat="-37.78489" lon="142.98918">
+    <tag k="ele" v="290"/>
+    <tag k="name" v="Mount Hamilton"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902634" version="1" timestamp="2014-08-10T16:13:02Z" lat="-38.16558" lon="143.83863">
+    <tag k="ele" v="167"/>
+    <tag k="name" v="Mount Hesse"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902653" version="1" timestamp="2014-08-10T16:13:03Z" lat="-38.07942" lon="143.11136">
+    <tag k="ele" v="262"/>
+    <tag k="name" v="Mount Koang"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902656" version="1" timestamp="2014-08-10T16:13:03Z" lat="-38.0835" lon="143.14287">
+    <tag k="ele" v="272"/>
+    <tag k="name" v="Mount Kurtweeton"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902657" version="1" timestamp="2014-08-10T16:13:03Z" lat="-37.31948" lon="142.50077">
+    <tag k="ele" v="917"/>
+    <tag k="name" v="Mount Lang"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902663" version="1" timestamp="2014-08-10T16:13:04Z" lat="-38.61843" lon="143.32244">
+    <tag k="ele" v="158"/>
+    <tag k="name" v="Mount MacKenzie"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902673" version="1" timestamp="2014-08-10T16:13:04Z" lat="-38.12744" lon="143.06684">
+    <tag k="ele" v="192"/>
+    <tag k="name" v="Mount Meningorot"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902676" version="1" timestamp="2014-08-10T16:13:04Z" lat="-38.67419" lon="143.84592">
+    <tag k="ele" v="190"/>
+    <tag k="name" v="Mount Meuron"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902691" version="1" timestamp="2014-08-10T16:13:05Z" lat="-38.52687" lon="143.45748">
+    <tag k="ele" v="285"/>
+    <tag k="name" v="Mount Murry"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902692" version="1" timestamp="2014-08-10T16:13:05Z" lat="-38.15339" lon="143.2441">
+    <tag k="ele" v="165"/>
+    <tag k="name" v="Mount Myrtoon"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902711" version="1" timestamp="2014-08-10T16:13:06Z" lat="-38.23615" lon="143.84304">
+    <tag k="ele" v="160"/>
+    <tag k="name" v="Mount Pleasant"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902714" version="3" timestamp="2019-03-30T21:59:46Z" lat="-38.31392" lon="143.28766">
+    <tag k="ele" v="289"/>
+    <tag k="name" v="Mount Porndon"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q281192"/>
+    <tag k="wikipedia" v="en:Mount Porndon"/>
+  </node>
+  <node id="3008902720" version="1" timestamp="2014-08-10T16:13:07Z" lat="-38.03503" lon="143.71195">
+    <tag k="ele" v="160"/>
+    <tag k="name" v="Mount Rebecca"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902722" version="2" timestamp="2018-12-27T14:12:04Z" lat="-38.2675188" lon="141.4180608">
+    <tag k="ele" v="225"/>
+    <tag k="name" v="Mount Richmond"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902729" version="1" timestamp="2014-08-10T16:13:07Z" lat="-38.62414" lon="143.72998">
+    <tag k="ele" v="583"/>
+    <tag k="name" v="Mount Sabine"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902730" version="1" timestamp="2014-08-10T16:13:07Z" lat="-38.56086" lon="143.9666">
+    <tag k="ele" v="207"/>
+    <tag k="name" v="Mount Saint George"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902849" version="2" timestamp="2017-08-29T01:11:40Z" lat="-37.2932876" lon="142.3310346">
+    <tag k="ele" v="978"/>
+    <tag k="name" v="Mount Thackeray"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902851" version="1" timestamp="2014-08-10T16:13:09Z" lat="-38.06494" lon="141.41592">
+    <tag k="ele" v="181"/>
+    <tag k="name" v="Mount Vandyke"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902855" version="1" timestamp="2014-08-10T16:13:09Z" lat="-37.82571" lon="143.19414">
+    <tag k="ele" v="287"/>
+    <tag k="name" v="Mount Vite Vite"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902859" version="3" timestamp="2019-03-30T22:09:58Z" lat="-38.30569" lon="142.73974">
+    <tag k="ele" v="216"/>
+    <tag k="name" v="Mount Warrnambool"/>
+    <tag k="natural" v="peak"/>
+    <tag k="wikidata" v="Q1950794"/>
+    <tag k="wikipedia" v="en:Mount Warrnambool"/>
+  </node>
+  <node id="3008902866" version="1" timestamp="2014-08-10T16:13:09Z" lat="-37.7431" lon="143.35776">
+    <tag k="ele" v="361"/>
+    <tag k="name" v="Mount Widderin"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008902931" version="1" timestamp="2014-08-10T16:13:13Z" lat="-38.84565" lon="143.55512">
+    <tag k="ele" v="80"/>
+    <tag k="name" v="Parker Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903046" version="1" timestamp="2014-08-10T16:13:13Z" lat="-38.39656" lon="144.00397">
+    <tag k="ele" v="389"/>
+    <tag k="name" v="Peters Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903058" version="1" timestamp="2014-08-10T16:13:14Z" lat="-38.63363" lon="143.75065">
+    <tag k="ele" v="548"/>
+    <tag k="name" v="Pine Ridge Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903101" version="1" timestamp="2014-08-10T16:13:16Z" lat="-38.31856" lon="143.51328">
+    <tag k="ele" v="218"/>
+    <tag k="name" v="Robertsons Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903120" version="1" timestamp="2014-08-10T16:13:17Z" lat="-37.98473" lon="141.73731">
+    <tag k="ele" v="169"/>
+    <tag k="name" v="Satchell Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903121" version="1" timestamp="2014-08-10T16:13:17Z" lat="-38.56777" lon="143.94991">
+    <tag k="ele" v="224"/>
+    <tag k="name" v="Scaw Fell"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903538" version="1" timestamp="2014-08-10T16:13:18Z" lat="-38.00385" lon="141.6473">
+    <tag k="ele" v="165"/>
+    <tag k="name" v="Sheoak Rise"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903614" version="2" timestamp="2021-06-05T03:10:23Z" lat="-37.3795927" lon="142.2389315">
+    <tag k="ele" v="932"/>
+    <tag k="name" v="The Chimney Pots"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903621" version="2" timestamp="2021-06-05T03:10:23Z" lat="-37.61967" lon="142.33583">
+    <tag k="ele" v="448"/>
+    <tag k="name" v="The Piccaninny"/>
+    <tag k="name:aus" v="Bainggug"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903680" version="1" timestamp="2014-08-10T16:13:25Z" lat="-38.22408" lon="143.53005">
+    <tag k="ele" v="279"/>
+    <tag k="name" v="Warrion Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="3008903681" version="1" timestamp="2014-08-10T16:13:25Z" lat="-38.1284" lon="143.62936">
+    <tag k="ele" v="138"/>
+    <tag k="name" v="Watch Hill"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065257239" version="1" timestamp="2017-08-29T01:05:18Z" lat="-37.4129153" lon="142.4668045">
+    <tag k="ele" v="819"/>
+    <tag k="name" v="Mount Marum Marum"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5065258981" version="1" timestamp="2017-08-29T01:11:40Z" lat="-37.2976211" lon="142.3392174">
+    <tag k="ele" v="985"/>
+    <tag k="name" v="Victoria Range"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="5205507550" version="2" timestamp="2021-01-27T05:04:30Z" lat="-37.3066272" lon="142.2984132">
+    <tag k="description" v="Peak with the exposed West Wall."/>
+    <tag k="ele" v="875"/>
+    <tag k="name" v="The Fortress"/>
+    <tag k="natural" v="peak"/>
+  </node>
+  <node id="8366154350" version="1" timestamp="2021-01-27T05:04:30Z" lat="-37.3082739" lon="142.3030222">
+    <tag k="description" v="Highest peak according to the Grampians NP map."/>
+    <tag k="ele" v="893"/>
+    <tag k="name" v="The Fortress (main peak)"/>
+    <tag k="natural" v="peak"/>
+  </node>
+</osm>

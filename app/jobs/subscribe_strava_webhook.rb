@@ -10,7 +10,7 @@ class SubscribeStravaWebhook < ApplicationJob
     subscription = subscriptions.first
 
     if subscription
-      if subscriptions.callback_url == callback_url
+      if subscription.callback_url == callback_url
         client.delete_push_subscription(subscription.id)
       else
         raise "Already have a subscription: #{subscription.callback_url}"

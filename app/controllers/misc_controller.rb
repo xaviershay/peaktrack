@@ -22,6 +22,10 @@ class MiscController < ApplicationController
     event = Strava::Webhooks::Models::Event.new(JSON.parse(request.body.read))
 
     case [event.object_type, event.aspect_type]
+    when ['athlete', 'update']
+      if event.updates['authorized'] == "false"
+        Athlete.find(event.object_id).destroy
+      end
     when ['activity', 'create']
       athlete = Athlete.find(event.owner_id)
       token = athlete.current_token!

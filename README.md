@@ -1,4 +1,4 @@
-# Peak Tracker
+# Peaky Finders
 
 
 ## Data Sources

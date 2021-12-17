@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   post '/webhook', to: 'misc#webhook_receive'
 
   post '/logout', to: 'misc#logout'
+
+  mount GoodJob::Engine => 'good_job'
 end

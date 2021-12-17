@@ -1,7 +1,7 @@
 class Athlete < ApplicationRecord
   serialize :oauth_token, AuthToken
 
-  has_many :activities
+  has_many :activities, dependent: :destroy
 
   def current_token!
     token = oauth_token

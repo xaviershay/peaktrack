@@ -1,6 +1,6 @@
 class Activity < ApplicationRecord
   belongs_to :athlete
-  has_many :activity_peaks
+  has_many :activity_peaks, dependent: :destroy
   has_many :peaks, through: :activity_peaks
 
   serialize :route, Route

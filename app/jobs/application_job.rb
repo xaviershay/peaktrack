@@ -1,7 +1,3 @@
 class ApplicationJob < ActiveJob::Base
-  # Automatically retry jobs that encountered a deadlock
-  # retry_on ActiveRecord::Deadlocked
-
-  # Most jobs are safe to ignore if the underlying records are no longer available
-  # discard_on ActiveJob::DeserializationError
+  retry_on Strava::Errors::Fault, attempts: :unlimited, wait: 15.minutes
 end

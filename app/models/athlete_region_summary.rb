@@ -30,9 +30,9 @@ LIMIT $3
       sql,
       'SQL',
       [
-        [nil, @athlete.id],
-        [nil, @region.id],
-        [nil, n]
+        @athlete.id,
+        @region.id,
+        n
       ],
       prepare: true
     ).map {|x| Record.new(

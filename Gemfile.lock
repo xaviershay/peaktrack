@@ -252,6 +252,7 @@ DEPENDENCIES
   rails (~> 7.0.0)
   sass-rails (>= 6)
   selenium-webdriver
+  sprockets-rails
   strava-ruby-client
   tzinfo-data
   webdrivers

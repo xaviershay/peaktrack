@@ -7,7 +7,7 @@ class MiscController < ApplicationController
     redirect_to '/'
   end
 
-  def debug_exceptions
+  def debug_exception
     raise "test exception"
   end
 

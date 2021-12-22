@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/athlete/:athlete_id/region/:region_id', to: 'athletes#show'
 
   get '/debug/activity/:id', to: 'athletes#debug_activity'
+  get '/debug/exception', to: 'misc#debug_exception'
 
   get '/', to: 'misc#home'
   get '/dashboard', to: 'misc#dashboard'

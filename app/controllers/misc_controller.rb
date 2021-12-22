@@ -7,6 +7,10 @@ class MiscController < ApplicationController
     redirect_to '/'
   end
 
+  def debug_exceptions
+    raise "test exception"
+  end
+
   def webhook_register
     challenge = Strava::Webhooks::Models::Challenge.new(params.slice(
       'hub.verify_token', 'hub.challenge', 'hub.mode'
